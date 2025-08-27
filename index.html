@@ -1,27 +1,56 @@
 <!-- HTML versão 5 -->
 <!-- Tags autossuficientes não precisam de uma tag de fechamento -->
+<!-- Semântica nada mais é do que dar sentido aos elementos dentro de uma página HTML. 
+ Ajuda no SEO (Search Engine Optimization) para ranquear o site dentro dos motores de busca. -->
 <!DOCTYPE html>
 
 <!-- Indicar que estamos iniciando um novo documento HTML -->
-<!-- Atributo: passado dentro da tag para identificação de algo -->
+<!-- Atributo: passado dentro da tag para identificação de alguma propriedade -->
 <html lang="pt-BR">
-    <!-- Aninhamento: uma tag dentro da outra --> 
-    <!-- Head: Cabeça - Metadados --> 
- <head>
-    <!-- meta charset="UTF-8": Transformar caracteres ASCII para o padrão normal --> 
-    <meta charset="UTF-8">
+  <!-- Aninhamento: uma tag dentro da outra -->
+  <!-- Head: Cabeça - Metadados -->
+  <head>
+    <!-- meta charset="UTF-8": Transformar caracteres ASCII para o padrão normal -->
+    <meta charset="UTF-8" />
     <title>Nosso primeiro site</title>
- </head> 
+  </head>
 
- <!-- Body: Corpo - Estrutura da página -->
- <body>
-    <h1>Olá mundo!</h1>
-    <h2>Teste!</h2>
-    <h3>Aula 1!</h3>
-    <h4>Aula 2!</h4>
-    <h5>Aula 3!</h5>
-    <h6>Aula 4!</h6>
-    <p>este é um parágrafo no HTML</p>
-    <img src="https://assets.b9.com.br/wp-content/uploads/2018/02/Google-Imagens.png" alt="Imagem do google">
- </body>
+  <!-- Body: Corpo - Estrutura da página -->
+  <body>
+    <!-- Tag de cabeçalho -->
+    <header>
+      <!-- Estrutura de navegação -->
+      <!-- Style: Propriedade para estilizar elementos HTML em linha (inline) -->
+      <nav style="color: #666; background-color: blue">
+        Texto 1 Texto 2 Texto 3
+      </nav>
+      <h1>Olá mundo!</h1>
+      <h2>Teste!</h2>
+      <h3>Aula 1!</h3>
+      <h4>Aula 2!</h4>
+      <h5>Aula 3!</h5>
+      <h6>Aula 4!</h6>
+      <p>este é um parágrafo no HTML</p>
+      <img
+        src="https://assets.b9.com.br/wp-content/uploads/2018/02/Google-Imagens.png"
+        alt="Imagem do google"
+      />
+    </header>
+    <!-- Tag para conteúdo principal -->
+    <main>
+      <!-- Border Width: Espessura da borda
+      Border Color: Cor da borda
+      Border Style: Estilo da borda -->
+      <!-- border-width: 1px; border-color: #666; border-style: solid; -->
+      <!-- Shorthand: border: 1px solid #666; -->
+      <div style="border: 1px solid #666">
+        <h1>Conteúdo primário (principal)</h1>
+        <!-- Tag para conteúdo secundário -->
+        <aside>Conteúdo secundário</aside>
+      </div>
+    </main>
+    <footer>
+      Rodapé aqui
+    </footer>
+  </body>
 </html>
