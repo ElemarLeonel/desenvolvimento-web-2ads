@@ -1,0 +1,23 @@
+/* seletor {
+    propriedade: valor;
+} */
+
+/* Classe (.): para estilizar múltiplos elementos */
+/* ID(#): para estilizar 1 único elemento */
+
+ul#menu{
+background-color: blue;
+}
+
+ol#menu-2{
+background-color: red;
+}
+
+li {
+color: white;
+font-size: 20px;
+}
+
+li.ativo{
+    color: yellow;
+}

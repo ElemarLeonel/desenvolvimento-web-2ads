@@ -13,6 +13,19 @@
     <!-- meta charset="UTF-8": Transformar caracteres ASCII para o padrão normal -->
     <meta charset="UTF-8" />
     <title>Nosso primeiro site</title>
+    <!-- Link: Vincular arquivos externos com o HTML onde o "rel" indica a relação
+    entre os arquivos e o "href" indica o caminho. 
+    Tipo: CSS externo (o mais utilizado)
+    -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tipo: CSS Incorporado -->
+    <style>
+      /* Seletor: Elemento HTML a ser selecionado */
+      /* nav{
+        color: #666;
+        background-color: blue;
+      } */
+    </style>
   </head>
 
   <!-- Body: Corpo - Estrutura da página -->
@@ -21,8 +34,26 @@
     <header>
       <!-- Estrutura de navegação -->
       <!-- Style: Propriedade para estilizar elementos HTML em linha (inline) -->
-      <nav style="color: #666; background-color: blue">
-        Texto 1 Texto 2 Texto 3
+      <nav style="">
+        <!-- Tag de lista não-ordenada (unordered list) -->
+        <ul id="menu">
+          <li>Texto 1</li>
+          <li class="ativo">Texto 2</li>
+          <li>Texto 3</li>
+        </ul>
+
+        <!-- Tag de lista ordenada (ordered list) -->
+        <ol id="menu-2">
+          <li>Texto 1</li>
+          <li class="ativo">
+            <!-- Tag a: Link de navegação onde o href 
+             refere-se ao caminho que será encaminhado -->
+            <a href="sobre-nos.html">
+              Texto 2
+            </a>
+          </li>
+          <li>Texto 3</li>
+        </ol>
       </nav>
       <h1>Olá mundo!</h1>
       <h2>Teste!</h2>
