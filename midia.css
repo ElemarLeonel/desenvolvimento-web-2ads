@@ -1,0 +1,24 @@
+/* CSS Reset - Técnica para tirar todos os espaçamentos e realizar configurações globais no projeto,
+relacionado a estilização */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    border: 1px solid #000;
+    padding-top: 50px;
+    margin-top: 50px;
+    // Pixel - unidade de medida fixa
+    // Porcentagem - unidade de medida relativa, 
+    // de acordo com o tamanho da tela do dispositivo
+    // VW - Viewport Width: Se condiciona também ao tamanho da tela do dispositivo, com algumas 
+    // ressalvas ligadas ao dispositivo que está abrindo o site.
+    // EM - Relaciona o tamanho de acordo com o elemento pai.
+    width: 50%;
+}
+
+.img img{
+    width: 4em;
+}
