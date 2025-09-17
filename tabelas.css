@@ -1,0 +1,9 @@
+/* Forma de estilizar multiplos seletores */
+table, tr, th{
+    font-size: 48px;
+}
+
+/* Forma descendente */
+table tr th{
+    font-size: 20px;
+}
