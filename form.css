@@ -1,0 +1,30 @@
+/* block assume toda a largura da página e coloca-se numa nova linha */
+/* .nome{
+    display: block;
+    border: 1px solid black;
+    width: 300px;
+} */
+
+/* inline ocupa só a largura do conteúdo e fica na mesma linha */
+.idade{
+    /* display: inline; */
+    border: 1px solid red;
+}
+
+/* inline-block combina os dois: fica na mesma linha que outros elementos, 
+mas comporta-se como block permitindo definir largura, altura e margens. */
+/* .email {
+    display: inline-block;
+    border: 1px solid green;
+} */
+
+#formulario{
+    // Display Flex: Propriedade CSS transforma um elemento num "flex container", permitindo alinhar e distribuir os seus elementos filhos (chamados "flex-itens") 
+    // de forma flexível e responsiva em linhas ou colunas
+    display: flex;
+    // Define a direção do meu formulário (linha/linha-reversa ou coluna/coluna-reversa)
+    flex-direction: column;
+    // Espaçamento automático entre os elementos
+    gap: 20px;
+    border: 1px solid yellow;
+}

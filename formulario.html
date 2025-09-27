@@ -4,57 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com formulários</title>
+    <link rel="stylesheet" href="./form.css" />
 </head>
 <body>
     <!-- Tag Form: Inicia um formulário -->
      
     <form action="resultado.html" method="GET">
+        <div style="width: 1920px;">
+        <div id="formulario">
         <!-- Agrupar 1 campo do formulário dentro de uma div -->
-        <div>
-            <!-- Tag Label: Rótulo do campo -->
-             <!-- Propriedade For: Foco no respectivo campo através do ID -->
-            <label for="nome">Nome</label>
-            <!-- Tag Input: Criar um input e definir o 
-             tipo com a propriedade type -->
-            <!-- Tipo Text: Tipo para texto genérico -->
-            <!-- Placeholder: Texto de fundo descritivo 
-               (executar uma ação)
-               (não funciona com todos os campos) 
-            -->
-             <input type="text" id="nome" placeholder="Digite seu nome"/>
-        </div>
-        <div>
-            <label for="idade">Idade</label>
-            <!-- Tipo number: Tipo númerico -->
-            <!-- Propriedade Min: Valor mínimo aceito pelo input -->
-            <!-- Propriedade Max: Valor máximo aceito pelo input -->
-            <input type="number" id="idade" min="18" max="20" />
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <!-- Tipo email: Validar que o campo receba um email -->
-            <input type="email" id="email" />
-        </div>
-        <div>
-            <label for="dataNascimento">Data de Nascimento</label>
-            <!-- Tipo date: Selecionar uma data -->
-            <input type="date" id="dataNascimento" />
-        </div>
-        <div>
-            <label for="cor">Cor</label>
-            <!-- Tipo color: Selecionar uma cor -->
-            <input type="color" id="cor" />
-        </div>
-        <div>
-            <label for="cor">Cor</label>
-            <!-- Tipo checkbox: Selecionar múltiplos elementos -->
-            <input type="checkbox" id="ativo" />
-            <input type="checkbox" id="teste" />
-        </div>
-        <div>
-            <!-- Tipo submit: Enviar os dados -->
-            <!-- Propriedade value: Texto que fica dentro do botão -->
-            <input type="submit" value="Enviar">
+            <div class="nome">
+                <!-- Tag Label: Rótulo do campo -->
+                <!-- Propriedade For: Foco no respectivo campo através do ID -->
+                <label for="nome">Nome</label>
+                <!-- Tag Input: Criar um input e definir o 
+                tipo com a propriedade type -->
+                <!-- Tipo Text: Tipo para texto genérico -->
+                <!-- Placeholder: Texto de fundo descritivo 
+                (executar uma ação)
+                (não funciona com todos os campos) 
+                -->
+                <input type="text" id="nome" placeholder="Digite seu nome"/>
+            </div>
+            <div class="idade">
+                <label for="idade">Idade</label>
+                <!-- Tipo number: Tipo númerico -->
+                <!-- Propriedade Min: Valor mínimo aceito pelo input -->
+                <!-- Propriedade Max: Valor máximo aceito pelo input -->
+                <input type="number" id="idade" min="18" max="20" />
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <!-- Tipo email: Validar que o campo receba um email -->
+                <input type="email" id="email" />
+                <p>Teste testando...</p>
+            </div>
+            <div>
+                <label for="dataNascimento">Data de Nascimento</label>
+                <!-- Tipo date: Selecionar uma data -->
+                <input type="date" id="dataNascimento" />
+            </div>
+            <div>
+                <label for="cor">Cor</label>
+                <!-- Tipo color: Selecionar uma cor -->
+                <input type="color" id="cor" />
+            </div>
+            <div>
+                <label for="cor">Cor</label>
+                <!-- Tipo checkbox: Selecionar múltiplos elementos -->
+                <input type="checkbox" id="ativo" />
+                <input type="checkbox" id="teste" />
+            </div>
+            <div>
+                <!-- Tipo submit: Enviar os dados -->
+                <!-- Propriedade value: Texto que fica dentro do botão -->
+                <input type="submit" value="Enviar">
+            </div>
+            </div>
         </div>
     </form>
 </body>
