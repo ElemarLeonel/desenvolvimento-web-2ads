@@ -19,6 +19,7 @@ mas comporta-se como block permitindo definir largura, altura e margens. */
 } */
 
 #formulario{
+    min-height: 100vh;
     // Display Flex: Propriedade CSS transforma um elemento num "flex container", permitindo alinhar e distribuir os seus elementos filhos (chamados "flex-itens") 
     // de forma flexível e responsiva em linhas ou colunas
     display: flex;
@@ -26,5 +27,12 @@ mas comporta-se como block permitindo definir largura, altura e margens. */
     flex-direction: column;
     // Espaçamento automático entre os elementos
     gap: 20px;
+    // Justify Content: Esta propriedade é aplicada ao contêiner flexível e controla o alinhamento dos itens flexíveis 
+    // ao longo do eixo principal.
+    justify-content: center;
+
+    // Align Items: Esta propriedade é aplicada ao contêiner flexível e controla o alinhamento dos itens flexíveis 
+    // ao longo do eixo contrário ao eixo principal.
+    align-items-center: center;
     border: 1px solid yellow;
 }
