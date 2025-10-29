@@ -1,0 +1,90 @@
+// Variáveis root servem para definir valores padrões que vamos utilizar
+// em toda a página ou no projeto.
+
+:root {
+    --background-color: #FFFFFF;
+    --texto-botao: 48px;
+}
+
+@media screen and (max-width: 640px){
+    h1 {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1{
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+
+h1, h2{
+    border: 1px solid red;
+}
+
+.media {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+}
+
+@media screen and (max-width: 640px){
+    .media {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px){
+    h1, h2 {
+        width: 25%;
+    }
+}
+
+// Pega o primeiro elemento do elemento pai
+h1:first-child{
+    width: 50%;
+}
+
+/* h1:last-child{
+    font-size: 64px;
+} */
+
+// Pega de acordo com a posição do elemento de acordo com o elemento pai
+h1:nth-child(3){
+    color: red;
+}
+
+// Pega os elementos impares do elemento pai
+li:nth-child(odd) {
+  background-color: lime;
+}
+
+// Pega os elementos pares do elemento pai
+li:nth-child(even) {
+  background-color: lime;
+}
+
+// Estiliza o elemento botão
+button{
+  background-color: blue;
+  color: white;
+  font-size: var(--texto-botao);
+}
+
+// Estiliza o elemento botão ao passar o mouse
+button:hover{
+  color: blue;
+  background-color: white;
+}
+
+// Estiliza a seleção do mouse
+li::selection{
+  background-color: blue;
+}
